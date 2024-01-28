@@ -2,10 +2,9 @@ server:
   port: 8080
 spring:
   #main:
-    #allow-bean-definition-overriding=true
+   # allow-bean-definition-overriding=true
   application:
     #应用的名称，可选
-    name: ZoMaRuiJi
   shardingsphere:
     datasource:
       names:
