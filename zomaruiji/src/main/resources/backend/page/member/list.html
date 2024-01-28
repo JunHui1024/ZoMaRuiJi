@@ -92,7 +92,7 @@
       </el-table>
       <el-pagination
         class="pageList"
-        :page-sizes="[2,3,5,10]"
+        :page-sizes="[2]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="counts"
@@ -118,7 +118,7 @@
              input: '',
              counts: 0,
              page: 1,
-             pageSize: 5,
+             pageSize: 2,
              tableData : [],
              id : '',
              status : '',
@@ -173,7 +173,6 @@
           //状态修改
           statusHandle (row) {
             this.id = row.id
-            //alert(row.id)
             this.status = row.status
             this.$confirm('确认调整该账号的状态?', '提示', {
               'confirmButtonText': '确定',
