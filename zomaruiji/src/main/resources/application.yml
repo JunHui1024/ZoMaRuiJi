@@ -1,6 +1,8 @@
 server:
   port: 8080
 spring:
+  #main:
+    #allow-bean-definition-overriding=true
   application:
     #应用的名称，可选
     name: ZoMaRuiJi
@@ -12,14 +14,14 @@ spring:
       master:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://127.0.0.1:3306/reggie?characterEncoding=utf-8
         username: root
         password: 123456
       # 从数据源
       slave:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://127.0.0.1:3306/reggie?characterEncoding=utf-8
         username: root
         password: 123456
     masterslave:
@@ -59,4 +61,4 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  path: G:\开发\git\repository\ZoMaRuiJi\img\
+  path: G:\develop\git\repository\ZoMaRuiJi\img\
