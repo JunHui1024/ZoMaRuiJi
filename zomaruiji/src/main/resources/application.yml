@@ -59,4 +59,5 @@ mybatis-plus:
       id-type: ASSIGN_ID
 reggie:
   path: G:\develop\git\repository\ZoMaRuiJi\img\
+  #path: /usr/ local/img/
 
